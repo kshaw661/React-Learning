@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import HelloWorld  from "./components/HelloWorld";
 import Message  from "./components/Message";
@@ -12,12 +11,25 @@ import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import StyleSheet from './components/StyleSheet';
+import Inline from './components/Inline';
+import './appStyles.css';
+import Styles from './appStyles.module.css'
+import Form from './components/Form';
+import LifeCycleA from './components/LifeCycleA';
+import LifeCycleB from './components/LifeCycleB';
+
 
 class App extends Component {
   render(){  
   return (
     <div className="container">
-      <StyleSheet primary={true} />
+      <LifeCycleA />
+      <LifeCycleB />
+      {/* <Form /> */}
+      {/* <h1 className="error">Error</h1>
+      <h1 className={Styles.success}>Success</h1>
+      <Inline/> */}
+      {/* <StyleSheet primary={true} /> */}
       {/* <NameList /> */}
       {/* <{Message} /> */}
       {/* <Counter/> */}
