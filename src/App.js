@@ -1,6 +1,9 @@
 import React,{ Component, Fragment, PureComponent } from 'react';
 import './App.css';
-import FRParentInput from './components/FRParentInput';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+// import PortalDemo from './components/PortalDemo';
+// import FRParentInput from './components/FRParentInput';
 // import HelloWorld  from "./components/HelloWorld";
 // import Message  from "./components/Message";
 // import Counter from './components/Counter'
@@ -29,7 +32,10 @@ class App extends Component {
   render(){  
   return (
     <div className="App">
-      <FRParentInput />
+      <ClickCounter />
+      <HoverCounter />
+      {/* <PortalDemo /> */}
+      {/* <FRParentInput /> */}
       {/* <FocusInput /> */}
       {/* <RefsDemo /> */}
       {/* <PureComponents /> */}
